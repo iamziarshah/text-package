@@ -1,0 +1,41 @@
+{
+    "name": "elearning/scms",
+    "description": "SCMS - Scratch Card Management System",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Syed Ziar Hussain Shah",
+            "email": "ziar.shah.pk@gmail.com",
+            "homepage": "tutoria.pk"
+        }
+    ],
+    "homepage": "https://github.com/elearning/scms",
+    "keywords": ["Laravel", "SCMS"],
+    "require": {
+        "illuminate/support": "~7|~8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Elearning\\SCMS\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Elearning\\SCMS\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Elearning\\SCMS\\SCMSServiceProvider"
+            ],
+            "aliases": {
+                "SCMS": "Elearning\\SCMS\\Facades\\SCMS"
+            }
+        }
+    }
+}
